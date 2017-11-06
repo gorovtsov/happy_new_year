@@ -1,8 +1,7 @@
 package hw.gorovtsov.gift.logic;
 
 import java.util.Scanner;
-import java.util.TreeSet;
-import hw.gorovtsov.gift.entity.SweetStuff;
+
 
 public class SweetStuffUserDialog {
 	

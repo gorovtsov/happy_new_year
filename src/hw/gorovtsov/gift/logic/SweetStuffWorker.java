@@ -6,13 +6,13 @@ import java.util.TreeSet;
 import hw.gorovtsov.gift.entity.SweetStuff;
 
 public class SweetStuffWorker {
-	public void showAllSweets(ArrayList<SweetStuff> gift) {
+	public void showAllSweets(TreeSet<SweetStuff> gift) {
 		for (SweetStuff sweety : gift) {
 			System.out.println(sweety);
 		}
 	}
 
-	public void showSweetsBySugar(ArrayList<SweetStuff> gift, int first, int second) {
+	public void showSweetsBySugar(TreeSet<SweetStuff> gift, int first, int second) {
 		int max = 0;
 		int min = 0;
 		if (first > second) {

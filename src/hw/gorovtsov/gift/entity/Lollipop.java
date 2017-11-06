@@ -1,14 +1,14 @@
 package hw.gorovtsov.gift.entity;
 
 public class Lollipop extends SweetStuff {
-	private int weight; // вес сладости
-	private int containsSugar; // количество сахара на 100 г сладости
-	private String name; // название сладости
+	private int weight; // РІРµСЃ СЃР»Р°РґРѕСЃС‚Рё
+	private int containsSugar; // РєРѕР»РёС‡РµСЃС‚РІРѕ СЃР°С…Р°СЂР° РЅР° 100 Рі СЃР»Р°РґРѕСЃС‚Рё
+	private String name; // РЅР°Р·РІР°РЅРёРµ СЃР»Р°РґРѕСЃС‚Рё
 	
 	public Lollipop() {
 		this.weight = 10;
 		this.containsSugar = 80;
-		this.name = "Шипучка";
+		this.name = "РЁРёРїСѓС‡РєР°";
 	}
 	
 	public Lollipop(int weight, int containsSugar, String name) {
@@ -48,7 +48,7 @@ public class Lollipop extends SweetStuff {
 
 	@Override
 	public String toString() {
-		return name + "[Леденец | вес =" + weight + ", Сахара на 100г=" + containsSugar + "]";
+		return name + "[Р›РµРґРµРЅРµС† | РІРµСЃ =" + weight + ", РЎР°С…Р°СЂР° РЅР° 100Рі=" + containsSugar + "]";
 	}
 	
 	

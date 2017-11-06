@@ -10,7 +10,7 @@ import hw.gorovtsov.gift.logic.SweetStuffWorker;
 public class GiftRunner {
 
 	public static void main(String[] args) {
-		ArrayList<SweetStuff> gift = new ArrayList<SweetStuff>();
+		TreeSet<SweetStuff> gift = new TreeSet<SweetStuff>(new SweetStuffComparator());
 
 		gift.add(new BitterChocolate());
 		gift.add(new ChocolateCandy());
@@ -19,8 +19,7 @@ public class GiftRunner {
 		gift.add(new MilkChocolate());
 		gift.add(new WaferCandy());
 		gift.add(new WhiteChocolate());
-		
-		gift.sort(new SweetStuffComparator());
+
 		
 		SweetStuffWorker sw = new SweetStuffWorker();
 		SweetStuffUserDialog ud = new SweetStuffUserDialog();
@@ -32,15 +31,8 @@ public class GiftRunner {
 			sw.showAllSweets(gift);
 		}
 		if (choise == 2) {
-			int firstVal = 0;
-			int secondVal = 0;
-
-			while (!(firstVal >= 0 && firstVal <= 100) && !(secondVal >= 0 && secondVal <= 100)) {
-				ud.askForIntervalStart();
-				firstVal = ud.numInput();
-				ud.askForIntervalEnd();
-				secondVal = ud.numInput();
-			}
+			int firstVal = 70;
+			int secondVal = 40;
 
 			sw.showSweetsBySugar(gift, firstVal, secondVal);
 		}
